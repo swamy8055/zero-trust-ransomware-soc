@@ -1,0 +1,18 @@
+This project is a cybersecurity lab simulation.
+
+Kali Linux is used to generate safe simulated security events.
+Splunk on Windows is used for log analysis and detection.
+
+The project does not deploy real ransomware.
+
+The project does not use real patient information.
+
+Network isolation, IAM enforcement, EDR containment and
+production failover are represented as simulated response actions.
+
+Backup hash verification demonstrates integrity checking,
+but does not by itself prove immutable storage.
+
+A production implementation would require IAM, EDR,
+firewall/microsegmentation controls, immutable backups,
+key management and appropriate regulatory processes.

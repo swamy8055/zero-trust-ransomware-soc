@@ -1,0 +1,23 @@
+2026-09-29 user=doctor01 src_ip=10.10.10.25 region=Region-A system=Healthcare action=LOGIN status=SUCCESS
+2026-09-29 user=nurse01 src_ip=10.10.10.26 region=Region-A system=Healthcare action=LOGIN status=SUCCESS
+2026-09-29 user=doctor01 src_ip=10.10.10.25 region=Region-A system=Backup action=ACCESS status=SUCCESS
+2026-09-29 user=doctor01 src_ip=10.10.10.25 region=Region-A system=Identity action=PRIVILEGE_ESCALATION status=ATTEMPT
+2026-09-29 user=doctor01 action=CREDENTIAL_REVOKE reason=INSIDER_THREAT status=SUCCESS
+2026-09-29 user=doctor01 action=SESSION_REVOKE status=SUCCESS
+2026-09-29 user=doctor01 action=CREDENTIAL_REISSUE mfa=ENABLED status=SUCCESS
+2026-09-29 user=doctor01 src_ip=10.10.10.25 region=Region-A system=Healthcare action=LOGIN status=SUCCESS severity=LOW
+2026-09-29 user=doctor01 src_ip=10.10.10.25 region=Region-A system=Backup action=ACCESS status=SUCCESS severity=HIGH
+2026-09-29 user=doctor01 src_ip=10.10.10.25 region=Region-A system=Identity action=PRIVILEGE_ESCALATION status=ATTEMPT severity=CRITICAL
+2026-09-29 src=User-PC-01 dest=Healthcare-Server region=Region-A direction=east-west protocol=HTTPS action=ALLOW
+2026-09-29 src=Healthcare-Server dest=Database-01 region=Region-A direction=east-west protocol=TCP action=ALLOW
+2026-09-29 src=Database-01 dest=Backup-01 region=Region-A direction=east-west protocol=SMB action=UNEXPECTED
+2026-09-29 src=User-PC-01 dest=Backup-01 region=Region-A direction=east-west protocol=SMB action=SUSPICIOUS
+2026-09-29 user=doctor01 region=Region-A old_role=user requested_role=admin action=PRIVILEGE_ESCALATION status=ATTEMPT severity=HIGH
+2026-09-29 user=unknown region=Region-A system=Healthcare action=MASS_FILE_MODIFICATION files=50 status=DETECTED severity=CRITICAL
+2026-09-29 region=Region-A action=REPLICATION_STOP status=SUCCESS
+2026-09-29 backup=Backup-001 action=HASH_VERIFICATION status=PASS
+2026-09-29 backup=Backup-001 action=CLEAN_ROOM_RESTORE status=PASS
+2026-09-29 region=Region-B action=SECURITY_VALIDATION status=PASS
+2026-09-29 region=Region-B action=IDENTITY_VALIDATION status=PASS
+2026-09-29 region=Region-B action=APPLICATION_VALIDATION status=PASS
+2026-09-29 source=Region-A destination=Region-B action=FAILOVER status=APPROVED

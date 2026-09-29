@@ -1,0 +1,7 @@
+2026-09-29 region=Region-A action=REPLICATION_STOP status=SUCCESS
+2026-09-29 backup=Backup-001 action=HASH_VERIFICATION status=PASS
+2026-09-29 backup=Backup-001 action=CLEAN_ROOM_RESTORE status=PASS
+2026-09-29 region=Region-B action=SECURITY_VALIDATION status=PASS
+2026-09-29 region=Region-B action=IDENTITY_VALIDATION status=PASS
+2026-09-29 region=Region-B action=APPLICATION_VALIDATION status=PASS
+2026-09-29 source=Region-A destination=Region-B action=FAILOVER status=APPROVED

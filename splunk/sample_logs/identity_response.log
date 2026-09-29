@@ -1,0 +1,3 @@
+2026-09-29 user=doctor01 action=CREDENTIAL_REVOKE reason=INSIDER_THREAT status=SUCCESS
+2026-09-29 user=doctor01 action=SESSION_REVOKE status=SUCCESS
+2026-09-29 user=doctor01 action=CREDENTIAL_REISSUE mfa=ENABLED status=SUCCESS

@@ -1,0 +1,25 @@
+Organization: Demo Healthcare
+
+Region-A:
+Healthcare Server
+Identity Server
+User Network
+Backup System
+
+Region-B:
+Healthcare Server
+Identity Server
+User Network
+Backup System
+
+Critical Systems:
+1. Healthcare Records
+2. Identity Federation
+3. Data Replication
+4. Backup Infrastructure
+
+Security Monitoring:
+Splunk
+
+Attack Simulation:
+Kali Linux
